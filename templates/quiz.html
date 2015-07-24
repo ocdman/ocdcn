@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block content %}
+<p>If you don't know what problems with you, but you always feel upset and anxiety.</p>
+<p>Try this! Make a quiz, maybe it can help you.</p>
+<form action="{{ url_for('submit_quiz') }}" method=post class=quiz onsubmit="return false">
+	<div class=question style="display: block;">
+		<p class=describe>
+			Q1: Do you have a stupid, dirty and terrible thought, idea or impulsion that is unnecessary?
+			Such as when you stand on a balcony, you can't stop to have the impulsion to jump.
+		</p>
+		<div class=answer>
+			<div class=item>
+				<input type=radio name=Q1 value=2 /> Yes <br />
+			</div>
+			<div class=item>
+				<input type=radio name=Q1 value=0 /> No <br />
+			</div>
+		</div>
+	</div>
+	<div class=question style="display: none">
+		<p class=describe>
+			Q2: Do you worry about you will do aggressive behavior or says something offensive to the people around you although you don't want to?
+			Such as when you see a sharp metal, you afraid you will take of it, hurt the people around you.
+		</p>
+		<div class=answer>
+			<div class=item>
+				<input type=radio name=Q2 value=2 /> Yes <br />
+			</div>
+			<div class=item>
+				<input type=radio name=Q2 value=0 /> No <br />
+			</div>
+		</div>
+	</div>
+	<div class=question style="display: none">
+		<p class=describe>
+			Q3: Do you get ease by do something repeatly or think something over and over?
+			Such as repeatedly wash hands to keep clean.
+		</p>
+		<div class=answer>
+			<div class=item>
+				<input type=radio name=Q3 value=2 /> Yes <br />
+			</div>
+			<div class=item>
+				<input type=radio name=Q3 value=0 /> No <br />
+			</div>
+		</div>
+	</div>
+	<div class=question style="display: none">
+		<p class=describe>
+			Q4: Do you get pain because some unpleasantly repeated thoughts or impulsion?
+			Such as awalys ask yourself why the sun raise from east and fall to the west. Although you know the common sense.
+		</p>
+		<div class=answer>
+			<div class=item>
+				<input type=radio name=Q4 value=2 /> Yes <br />
+			</div>
+			<div class=item>
+				<input type=radio name=Q4 value=0 /> No <br />
+			</div>
+		</div>
+	</div>
+	<div class=question style="display: none">
+		<p class=describe>
+			Q5: Do you afraid to hear some words such as disease, death or suicide? And you will distract for a long time.
+		</p>
+		<div class=answer>
+			<div class=item>
+				<input type=radio name=Q5 value=2 /> Yes <br />
+			</div>
+			<div class=item>
+				<input type=radio name=Q5 value=0 /> No <br />
+			</div>
+		</div>
+	</div>
+</form>
+{% endblock %}
