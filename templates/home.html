@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div class="index-body">
+		<!--=== Slider ===-->
+		<div id="layerslider" class="ls-container ls-fullwidth">
+			<!-- First slide -->
+			<div class="ls-inner">
+				<div class="ls-slide">
+					<article data-page-image="{{ url_for('static', filename='pic/4184f3.png') }}">
+						<div class="l-main">
+							<div class="title-container">
+								<h1 class="title">强迫症是可以医治的。我们提供帮助。</h1> 
+								<h2 class="subtitle">任何强迫症患者在这里都能得到有用的信息。</h2>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+		<!--=== End Slider ===-->
+	</div>
+{% endblock %}
