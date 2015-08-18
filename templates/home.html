@@ -1,38 +1,36 @@
 {% extends "layout.html" %}
 {% block content %}
-	<div id="carousel" class="carousel inside">
+	<div id="myCarousel" class="carousel slide">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
-			<li data-target="#carousel" data-slide-to="0" class="active"></li>
-			<li data-target="#carousel" data-slide-to="1"></li>
-			<li data-target="#carousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
 		</ol>
 		
 		<!-- Wrapper for Slides -->
 		<div class="carousel-inner">
 			<div class="item active">
-				<div class="fill" style="background-image: url('http://placehold.it/1900x1080&text=Slide One');"></div>
+				<div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
 			</div>
 			<div class="item">
-				<div class="fill" style="background-image: url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+				<div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
 			</div>
 			<div class="item">
-				<div class="fill" style="background-image: url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+				<div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
 			</div>
 		</div>
 		
 		<!-- Controls -->
-		<a class="left carousel-control" href="#carousel" data-slide="prev">
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
 			<span class="icon-prev"></span>
 		</a>
-		<a class="right carousel-control" href="#carousel" data-slide="next">
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
 			<span class="icon-next"></span>
 		</a>
 	</div>
-	<div class="index-body">
-		<!--=== Slider ===-->
+<!-- 	<div class="index-body">
 		<div id="layerslider" class="ls-container ls-fullwidth">
-			<!-- First slide -->
 			<div class="ls-inner">
 				<div class="ls-slide">
 					<article data-page-image="{{ url_for('static', filename='pic/4184f3.png') }}">
@@ -46,6 +44,26 @@
 				</div>
 			</div>
 		</div>
-		<!--=== End Slider ===-->
-	</div>
+	</div> -->
+	<section class="content__section carbon__features">
+	  <div class="grid6 alignleft">
+		<h3>Circle of Influence</h3>
+		<p>Carbon Circles are groups of websites and applications, run by some pretty awesome people. Each circle is highly focused and its sites are curated to provide high quality page impressions. To keep things balanced, we only select advertisers who provide products that the visitors need, want and love.</p>
+	  </div>
+	  <div class="grid6 alignleft">
+		<h3>Wide Reach with a Single Buy</h3>
+		<p>With a great product and a sexy ad, why would you commit to a single site? You should get out there and strut your stuff! All Carbon ad spots rotate evenly through all of the sites in a circle throughout the month.</p>
+	  </div>
+	</section>
+	<section class="content__section carbon__features">
+	  <div class="grid6 alignleft">
+		<h3>Invite-Only</h3>
+		<p>To ensure that our circles are filled with awesome, we curate them ourselves via invitations. Being part of the communities that we serve keeps us in tune with what's hot. In fact, we all get together and play “hot or not” and send those that are “hot” an invite.</p>
+	  </div>
+
+	  <div class="grid6 alignleft">
+		<h3>Sexy Ads</h3>
+		<p>Speaking of hotness, we pay extra attention to the appeal of the ads that we serve. “Did you see the kerning on that ad?” is pretty common around Carbon HQ. Just in case, we have ad-interior decorators if you need some help spicing it up.</p>
+	  </div>
+	</section>
 {% endblock %}
